@@ -1,9 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css"
+import { useEffect } from "react";
 
 export default function Home() {
 
   const unusedVariable = "this will fail lint"
+
+  if (true) {
+        useEffect(() => {})  // hooks inside conditions
+    }
   
   return (
     <div className={styles.page}>

@@ -13,12 +13,6 @@ const eslintConfig = defineConfig([
     "build/**",
     "next-env.d.ts",
   ]),
-  {
-    rules: {
-      "no-unused-vars": "error",              // ← JS unused vars
-      "@typescript-eslint/no-unused-vars": "error"  // ← TS unused vars
-    }
-  }
 ]);
 
 export default eslintConfig;
